@@ -36,7 +36,7 @@ pipeline {
 		steps {
 			// Run the maven build
 			sh 'mvn --version'
-			sh "'mvn' -Dmaven.test.failure.ignore clean package"
+			sh "'mvn' -Dmaven.test.failure.ignore test install"
 	        }
 	}
     }
