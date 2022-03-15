@@ -28,7 +28,7 @@ pipeline {
 		
 	stage('Preparation') { // for display purposes
 		steps {
-		        checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'git@github.com:prsomash/SampleMavenProject.git']]])
+		        checkout([$class: 'GitSCM', branches: [[name: '*/maaster']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'git@github.com:prsomash/SampleMavenProject.git']]])
                 
 		    }
 	}
